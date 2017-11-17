@@ -67,7 +67,7 @@ go_library(
         "//pkg/types:go_default_library",
         "//pkg/util/intstr:go_default_library",
         "//pkg/watch:go_default_library",
-        "//vendor/k8s.io/kube-openapi/pkg/common:go_default_library",
+        "@io_k8s_kube_openapi//pkg/common:go_default_library",
     ],
 )
 
