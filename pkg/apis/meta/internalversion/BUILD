@@ -15,10 +15,10 @@ go_test(
     importpath = "k8s.io/apimachinery/pkg/apis/meta/internalversion",
     library = ":go_default_library",
     deps = [
-        "//vendor/k8s.io/apimachinery/pkg/api/testing/roundtrip:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/meta/fuzzer:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/meta/v1:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/diff:go_default_library",
+        "//pkg/api/testing/roundtrip:go_default_library",
+        "//pkg/apis/meta/fuzzer:go_default_library",
+        "//pkg/apis/meta/v1:go_default_library",
+        "//pkg/util/diff:go_default_library",
     ],
 )
 
@@ -34,15 +34,15 @@ go_library(
     ],
     importpath = "k8s.io/apimachinery/pkg/apis/meta/internalversion",
     deps = [
-        "//vendor/k8s.io/apimachinery/pkg/apis/meta/v1:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/meta/v1alpha1:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/conversion:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/fields:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/labels:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/schema:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/serializer:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/validation/field:go_default_library",
+        "//pkg/apis/meta/v1:go_default_library",
+        "//pkg/apis/meta/v1alpha1:go_default_library",
+        "//pkg/conversion:go_default_library",
+        "//pkg/fields:go_default_library",
+        "//pkg/labels:go_default_library",
+        "//pkg/runtime:go_default_library",
+        "//pkg/runtime/schema:go_default_library",
+        "//pkg/runtime/serializer:go_default_library",
+        "//pkg/util/validation/field:go_default_library",
     ],
 )
 

@@ -11,11 +11,11 @@ go_library(
     srcs = ["install.go"],
     importpath = "k8s.io/apimachinery/pkg/apis/testapigroup/install",
     deps = [
-        "//vendor/k8s.io/apimachinery/pkg/apimachinery/announced:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apimachinery/registered:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/testapigroup:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/testapigroup/v1:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime:go_default_library",
+        "//pkg/apimachinery/announced:go_default_library",
+        "//pkg/apimachinery/registered:go_default_library",
+        "//pkg/apis/testapigroup:go_default_library",
+        "//pkg/apis/testapigroup/v1:go_default_library",
+        "//pkg/runtime:go_default_library",
     ],
 )
 
@@ -25,8 +25,8 @@ go_test(
     importpath = "k8s.io/apimachinery/pkg/apis/testapigroup/install",
     library = ":go_default_library",
     deps = [
-        "//vendor/k8s.io/apimachinery/pkg/api/testing/roundtrip:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/testapigroup/fuzzer:go_default_library",
+        "//pkg/api/testing/roundtrip:go_default_library",
+        "//pkg/apis/testapigroup/fuzzer:go_default_library",
     ],
 )
 

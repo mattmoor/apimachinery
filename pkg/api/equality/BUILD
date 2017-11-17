@@ -10,11 +10,11 @@ go_library(
     srcs = ["semantic.go"],
     importpath = "k8s.io/apimachinery/pkg/api/equality",
     deps = [
-        "//vendor/k8s.io/apimachinery/pkg/api/resource:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/meta/v1:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/conversion:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/fields:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/labels:go_default_library",
+        "//pkg/api/resource:go_default_library",
+        "//pkg/apis/meta/v1:go_default_library",
+        "//pkg/conversion:go_default_library",
+        "//pkg/fields:go_default_library",
+        "//pkg/labels:go_default_library",
     ],
 )
 

@@ -23,14 +23,14 @@ go_library(
     importpath = "k8s.io/apimachinery/pkg/apis/meta/v1/unstructured",
     deps = [
         "//vendor/github.com/golang/glog:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/meta/v1:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/conversion:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/conversion/unstructured:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/schema:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/types:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/json:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/runtime:go_default_library",
+        "//pkg/apis/meta/v1:go_default_library",
+        "//pkg/conversion:go_default_library",
+        "//pkg/conversion/unstructured:go_default_library",
+        "//pkg/runtime:go_default_library",
+        "//pkg/runtime/schema:go_default_library",
+        "//pkg/types:go_default_library",
+        "//pkg/util/json:go_default_library",
+        "//pkg/util/runtime:go_default_library",
     ],
 )
 

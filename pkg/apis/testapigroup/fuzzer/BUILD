@@ -11,12 +11,12 @@ go_library(
     importpath = "k8s.io/apimachinery/pkg/apis/testapigroup/fuzzer",
     deps = [
         "//vendor/github.com/google/gofuzz:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/api/testing:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/api/testing/fuzzer:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/testapigroup:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/testapigroup/v1:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/serializer:go_default_library",
+        "//pkg/api/testing:go_default_library",
+        "//pkg/api/testing/fuzzer:go_default_library",
+        "//pkg/apis/testapigroup:go_default_library",
+        "//pkg/apis/testapigroup/v1:go_default_library",
+        "//pkg/runtime:go_default_library",
+        "//pkg/runtime/serializer:go_default_library",
     ],
 )
 

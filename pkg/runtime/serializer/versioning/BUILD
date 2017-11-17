@@ -12,9 +12,9 @@ go_test(
     importpath = "k8s.io/apimachinery/pkg/runtime/serializer/versioning",
     library = ":go_default_library",
     deps = [
-        "//vendor/k8s.io/apimachinery/pkg/runtime:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/schema:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/diff:go_default_library",
+        "//pkg/runtime:go_default_library",
+        "//pkg/runtime/schema:go_default_library",
+        "//pkg/util/diff:go_default_library",
     ],
 )
 
@@ -23,8 +23,8 @@ go_library(
     srcs = ["versioning.go"],
     importpath = "k8s.io/apimachinery/pkg/runtime/serializer/versioning",
     deps = [
-        "//vendor/k8s.io/apimachinery/pkg/runtime:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/schema:go_default_library",
+        "//pkg/runtime:go_default_library",
+        "//pkg/runtime/schema:go_default_library",
     ],
 )
 

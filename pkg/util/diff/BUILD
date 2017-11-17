@@ -19,7 +19,7 @@ go_library(
     importpath = "k8s.io/apimachinery/pkg/util/diff",
     deps = [
         "//vendor/github.com/davecgh/go-spew/spew:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/validation/field:go_default_library",
+        "//pkg/util/validation/field:go_default_library",
     ],
 )
 

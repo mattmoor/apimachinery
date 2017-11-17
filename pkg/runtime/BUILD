@@ -37,10 +37,10 @@ go_library(
     importpath = "k8s.io/apimachinery/pkg/runtime",
     deps = [
         "//vendor/github.com/gogo/protobuf/proto:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/conversion:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/conversion/queryparams:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/schema:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/errors:go_default_library",
+        "//pkg/conversion:go_default_library",
+        "//pkg/conversion/queryparams:go_default_library",
+        "//pkg/runtime/schema:go_default_library",
+        "//pkg/util/errors:go_default_library",
     ],
 )
 
@@ -56,13 +56,13 @@ go_test(
     deps = [
         "//vendor/github.com/google/gofuzz:go_default_library",
         "//vendor/github.com/spf13/pflag:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/api/meta:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/conversion:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/schema:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/serializer:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/testing:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/diff:go_default_library",
+        "//pkg/api/meta:go_default_library",
+        "//pkg/conversion:go_default_library",
+        "//pkg/runtime:go_default_library",
+        "//pkg/runtime/schema:go_default_library",
+        "//pkg/runtime/serializer:go_default_library",
+        "//pkg/runtime/testing:go_default_library",
+        "//pkg/util/diff:go_default_library",
     ],
 )
 

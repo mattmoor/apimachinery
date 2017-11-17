@@ -19,9 +19,9 @@ go_test(
         "//vendor/github.com/stretchr/testify/assert:go_default_library",
         "//vendor/github.com/stretchr/testify/require:go_default_library",
         "//vendor/golang.org/x/net/websocket:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/diff:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/httpstream:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/net:go_default_library",
+        "//pkg/util/diff:go_default_library",
+        "//pkg/util/httpstream:go_default_library",
+        "//pkg/util/net:go_default_library",
     ],
 )
 
@@ -39,12 +39,12 @@ go_library(
         "//vendor/github.com/mxk/go-flowrate/flowrate:go_default_library",
         "//vendor/golang.org/x/net/html:go_default_library",
         "//vendor/golang.org/x/net/html/atom:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/api/errors:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/httpstream:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/net:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/runtime:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/sets:go_default_library",
-        "//vendor/k8s.io/apimachinery/third_party/forked/golang/netutil:go_default_library",
+        "//pkg/api/errors:go_default_library",
+        "//pkg/util/httpstream:go_default_library",
+        "//pkg/util/net:go_default_library",
+        "//pkg/util/runtime:go_default_library",
+        "//pkg/util/sets:go_default_library",
+        "//third_party/forked/golang/netutil:go_default_library",
     ],
 )
 

@@ -41,7 +41,7 @@ $(location //vendor/k8s.io/code-generator/cmd/set-gen) \
     --output-package sets
     """,
     go_deps = [
-        "//vendor/k8s.io/apimachinery/pkg/util/sets/types:go_default_library",
+        "//pkg/util/sets/types:go_default_library",
     ],
     tools = [
         "//vendor/k8s.io/code-generator/cmd/set-gen",

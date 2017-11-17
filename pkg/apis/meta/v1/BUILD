@@ -23,8 +23,8 @@ go_test(
     deps = [
         "//vendor/github.com/ghodss/yaml:go_default_library",
         "//vendor/github.com/json-iterator/go:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/labels:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/schema:go_default_library",
+        "//pkg/labels:go_default_library",
+        "//pkg/runtime/schema:go_default_library",
     ],
 )
 
@@ -57,16 +57,16 @@ go_library(
         "//vendor/github.com/gogo/protobuf/proto:go_default_library",
         "//vendor/github.com/gogo/protobuf/sortkeys:go_default_library",
         "//vendor/github.com/google/gofuzz:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/api/resource:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/conversion:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/fields:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/labels:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/runtime/schema:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/selection:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/types:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/util/intstr:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/watch:go_default_library",
+        "//pkg/api/resource:go_default_library",
+        "//pkg/conversion:go_default_library",
+        "//pkg/fields:go_default_library",
+        "//pkg/labels:go_default_library",
+        "//pkg/runtime:go_default_library",
+        "//pkg/runtime/schema:go_default_library",
+        "//pkg/selection:go_default_library",
+        "//pkg/types:go_default_library",
+        "//pkg/util/intstr:go_default_library",
+        "//pkg/watch:go_default_library",
         "//vendor/k8s.io/kube-openapi/pkg/common:go_default_library",
     ],
 )
@@ -99,7 +99,7 @@ go_test(
     srcs = ["conversion_test.go"],
     importpath = "k8s.io/apimachinery/pkg/apis/meta/v1_test",
     deps = [
-        "//vendor/k8s.io/apimachinery/pkg/api/equality:go_default_library",
-        "//vendor/k8s.io/apimachinery/pkg/apis/meta/v1:go_default_library",
+        "//pkg/api/equality:go_default_library",
+        "//pkg/apis/meta/v1:go_default_library",
     ],
 )
